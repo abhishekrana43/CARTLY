@@ -10,3 +10,4 @@ Frontend/.env
 .env
 dist
 build
+node_modules/
