@@ -3,7 +3,7 @@ import dotenv from "dotenv"
 import authRoutes from "./routes/auth.routes.js"
 import {connectDB} from "./lib/db.js"
 import cookieParser from "cookie-parser"
-
+import productRoutes from "./routes/product.routes.js"
 dotenv.config()
 
 const app = express();
