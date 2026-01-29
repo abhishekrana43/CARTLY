@@ -6,6 +6,28 @@ const productSchema =new mongoose.Schema({
         required:true
     },
     description:{
-        
+        type:String,
+        required: true
+
+    },
+    prices:{
+        type:Number,
+        min:0,
+        required: true
+    },
+    image:{
+        type:String,
+        required:[true, 'Image is required'],
+    },
+    category:{
+        type:String,
+        requirde:true
+    },
+    isFeature:{
+        type:Boolean,
+        default: false
     }
-})
+}, {timestamps: true});
+
+const Product = mongoose.model("Product", productSchema);
+export default Product
