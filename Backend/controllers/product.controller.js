@@ -1,6 +1,7 @@
 import { redis } from "../lib/redis.js";
 import Product from "../models/products.model.js";
 import cloudinary from "../lib/cloudinary.js";
+import Coupan from "../models/coupan.model.js";
 
 export const getAllProducts = async(req,res) =>{
     try {
@@ -151,4 +152,4 @@ async function updateFeatureProductsCache() {
 catch (error) {
      console.log("Error in update feature function");   
     }
-}
+};
