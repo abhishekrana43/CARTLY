@@ -9,7 +9,7 @@ export const useUserStore = create((set,get) =>({
    checkingAuth: true,
 
    signup: async ({name,email,password,confimPassword}) =>{
-    // set({loading:true});
+    set({loading:true});
 
     if(password !== confimPassword){
         set({loading:false});
